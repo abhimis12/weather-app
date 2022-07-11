@@ -4,17 +4,44 @@ import axios from "axios";
 import "../css/Search.css";
 import { useDispatch } from "react-redux";
 import { adddata } from "../../redux/action";
+import { useEffect } from "react";
 
 export default function Search({  searchCity }) {
-  
+  var api =`dfbfa90f298297bd32d78348f443a400`;
     const [currentCity, setCurrentCity] = useState("");
     const dispatch=useDispatch();
+    const [coordinates, setCoordinates] = useState({});
+    
+    useEffect(()=>{
+      navigator.geolocation.getCurrentPosition(
+        ({ coords: { latitude, longitude } }) => {
+          setCoordinates({ lat: latitude, lng: longitude });
+        }
+      );
+    },[])  
+    useEffect(()=>{
+      if (coordinates.lat !== undefined) {
+
+          axios
+            .get(
+              `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lng}&appid=${api}`
+            )
+            .then(({ data }) => {
+              setCurrentCity(data.name);
+              
+            })
+            .catch((err) => console.log(err));
+        
+        datas(coordinates.lat,coordinates.lng)
+      }
+    },[coordinates])
+
+
 
   function handleInputChange(event) {
     setCurrentCity(event.target.value);
   }
 
-  var api =`dfbfa90f298297bd32d78348f443a400`;
 
   function handleButtonClick() {
     
@@ -35,8 +62,9 @@ export default function Search({  searchCity }) {
     https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${"dfbfa90f298297bd32d78348f443a400"}`)
 .then(({data})=>
 {
+  console.log(data)
   dispatch(adddata(data.daily))
-    // console.log(data)
+  
 })
 }
 

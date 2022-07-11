@@ -4,8 +4,11 @@ import Search from './components/home/Search';
 import Boxdata from './components/home/Boxdata';
 import Graph from './components/home/Graph';
 import Sunrise from './components/home/Sunrise';
+import { useEffect } from 'react';
+
 
 function App() {
+  
   return (
     <div className="App">
       <Search/>
