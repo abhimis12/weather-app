@@ -2,11 +2,13 @@ import React from "react";
 import  { useState } from "react";
 import axios from "axios";
 import "../css/Search.css";
-
+import { useDispatch } from "react-redux";
+import { adddata } from "../../redux/action";
 
 export default function Search({  searchCity }) {
   
     const [currentCity, setCurrentCity] = useState("");
+    const dispatch=useDispatch();
 
   function handleInputChange(event) {
     setCurrentCity(event.target.value);
@@ -24,8 +26,8 @@ export default function Search({  searchCity }) {
         datas(lat,lon)   
     }) 
 
-    if (currentCity.trim() === "") return;
-    searchCity(currentCity);
+    // if (currentCity.trim() === "") return;
+    // searchCity(currentCity);
   }
 
   function datas(lat, lon){
@@ -33,9 +35,12 @@ export default function Search({  searchCity }) {
     https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${"dfbfa90f298297bd32d78348f443a400"}`)
 .then(({data})=>
 {
-    console.log(data)
+  dispatch(adddata(data.daily))
+    // console.log(data)
 })
 }
+
+
 
   function handleKeyPress(e) {
     if (e.key === "Enter") handleButtonClick();

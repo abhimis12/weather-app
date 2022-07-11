@@ -1,12 +1,8 @@
 .nav {
     display: flex;
     margin-top: 30px;
-    margin-left: 200px;
-    
+   
+    width:100px;
   }
   
-  @media (max-width: 400px) {
-    .nav {
-      padding: 1rem;
-    }
-  }
+ 

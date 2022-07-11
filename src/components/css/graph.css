@@ -1,0 +1,13 @@
+
+.graph3{
+    width:710px;
+    /* margin-left: 600px; */
+    padding:5rem;
+
+}
+.graph1{
+    display:flex;
+    font-size: 45px; 
+    font-weight:bold;
+    align-items: center;
+}

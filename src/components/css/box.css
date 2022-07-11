@@ -1,0 +1,24 @@
+.box1{
+    display: flex;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 45px;
+    gap: 1rem;
+    margin-left: 50px;
+    width: 650px;
+    height:200px;
+    overflow-x: scroll;  
+    
+}
+.box3{
+    font-size: 15px; 
+    font-weight:bold;
+}
+.box2{
+    width: 700px;
+    padding: 0 2rem;
+}
+.box2:hover{
+    border: 3px solid blue;
+    height:200px;
+}
