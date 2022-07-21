@@ -10,19 +10,13 @@
     background-color:lightblue;
     margin-left: 100px;;
 }
-.sun1:hover{
-       
-       
-}
+
 .sun2{
     font-size: 28px; 
     font-weight:bold;
     background-color:lightblue; 
 }
-.sun2:hover{
-   
-   
-}
+
 .sun5{
     display:flex;
     /* margin-left: 700px; */
