@@ -1,9 +1,20 @@
 .sun{
     display:flex;
-    
     gap:400px;
+    font-size: 26px;
+    font-weight:bold; 
+    margin-right: -50px;
+    margin-left: 10px;;
 }
-.sun1{
+.sun10{
+    display:flex;
+    gap:300px;
+    font-size: 26px;
+    font-weight:bold; 
+    margin-right: -50px;
+    margin-left: 10px;;
+}
+/* .sun1{
     font-size: 26px;
     font-weight:bold; 
     margin-right: -50px;
@@ -19,7 +30,7 @@
 
 .sun5{
     display:flex;
-    /* margin-left: 700px; */
+   
     gap:430px;
     
     
@@ -38,4 +49,4 @@
     background-color:lightblue;
    margin-right: 190px;
 }
-
+ */

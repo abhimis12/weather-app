@@ -29,9 +29,9 @@ const Sunrise = () => {
         <p className='sun1' >Pressure {sune[0]}</p>
         <p className='sun2' >Humidity {sune[1]}</p>
         </div>
-        <div className='sun5'>
+        <div className='sun10'>
         <p className='sun3'>Sunrise  {sunrise}</p>
-        <p className='sun4'>sunset   {sunset}</p>
+        <p className='sun4'>Sunset {sunset}</p>
         </div>
     </div>
   )
