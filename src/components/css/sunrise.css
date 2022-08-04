@@ -1,31 +1,84 @@
 .sun{
-    display:flex;
-    
-    gap:400px;
+    display: flex;
+    font-weight:bold; 
+    gap: 280px; 
+    margin-left: 90px;;
+    font-size: 26px;
 }
-.sun1{
+.sun111{
+    background-color: #007ced;
+    background: linear-gradient(to bottom, #007ced 0%,#cce7ff 100%);
+    width: 500px;
+
+} 
+.sun112{
+    background-color: #b7d4ef;
+    background: linear-gradient(to bottom, #007ced 6%,#cce7ff 100%);
+    width: 500px;
+    margin-right: 230px;
+} 
+.sun10{
+    display: flex;
+    font-weight:bold; 
+    gap: 370px; 
+    margin-top: 50px;
+    margin-left: 90px;;
+    font-size: 26px;
+}
+.sun31{
+    font-size: 21px;
+
+}
+.sun41{
+    margin-left: 40px;
+}
+
+
+/* .sun{
+    display:flex;
+    /* gap:400px; */
+    /* font-size: 26px;
+    font-weight:bold; 
+    margin-right: -50px;
+    margin-left: 90px;;
+    display: flex;
+    gap: 400px; 
+    font-size: 26px;
+    line-height: 18.4px;
+    
+}
+.sun10{
+    display:flex;
+    gap:270px;
+    font-size: 26px;
+    font-weight:bold; 
+    margin-right: -50px;
+    margin-left: 90px;;
+}
+.sun111{
+    background-color: #007ced;
+    background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+    width:100%;
+   
+} */ 
+
+/* .sun1{
     font-size: 26px;
     font-weight:bold; 
     margin-right: -50px;
     background-color:lightblue;
     margin-left: 100px;;
 }
-.sun1:hover{
-       
-       
-}
+
 .sun2{
     font-size: 28px; 
     font-weight:bold;
     background-color:lightblue; 
 }
-.sun2:hover{
-   
-   
-}
+
 .sun5{
     display:flex;
-    /* margin-left: 700px; */
+   
     gap:430px;
     
     
@@ -44,4 +97,4 @@
     background-color:lightblue;
    margin-right: 190px;
 }
-
+ */

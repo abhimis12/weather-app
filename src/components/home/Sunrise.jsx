@@ -26,12 +26,18 @@ const Sunrise = () => {
     sune &&
     <div >
         <div className='sun'>
-        <p className='sun1' >Pressure {sune[0]}</p>
-        <p className='sun2' >Humidity {sune[1]}</p>
+        <span className='sun111' >Pressure <br></br><div  className='sun31'>  {sune[0]}</div></span>
+        <span className='sun112' >Humidity <br></br><div  className='sun31'>{sune[1]}</div></span>
         </div>
-        <div className='sun5'>
-        <p className='sun3'>Sunrise  {sunrise}</p>
-        <p className='sun4'>sunset   {sunset}</p>
+        <div className='sun10'>
+        <span className='sun3'>Sunrise<br></br><div  className='sun31'>{sunrise}</div> </span>
+        <span className='sun4'>Sunset<br></br> <div  className='sun31'>{sunset}</div></span>
+        </div>
+        <div className='sun41'>
+        <img
+                src="https://i.postimg.cc/tJYMcGyS/imgonline-com-ua-resize-Gj-Y8u6-SNDXn-TS.jpg"
+                alt=""
+              />
         </div>
     </div>
   )
